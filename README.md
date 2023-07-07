@@ -256,3 +256,11 @@ Fast-forward
 index.html | 2 +-
 1 file changed, 1 insertion(+), 1 deletion(-)
 ====================================================
+
+# (10) git remote add origin
+
+# ---> to move local repo to remote repo
+
+eg:
+
+# git remote add origin https://github.com/manthan-paktolus/git-tut.git
