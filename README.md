@@ -207,10 +207,52 @@ push Update remote refs along with associated objects
 range-diff Compare two commit ranges (e.g. two versions of a branch)
 =======================================================
 
-# git branch <branch-name>
+# (7) git branch <branch-name>
 
 # ---> to create a new branch
 
 eg:
 
-=========================================================
+git branch add-new-content
+PS D:\git-tut> git branch
+add-new-content
+
+- # master
+
+# (8) git checkout <branchName>
+
+# ---> to move from one branch to another
+
+eg:
+
+git checkout add-new-content
+Switched to branch 'add-new-content'
+PS D:\git-tut> git branch
+
+- add-new-content
+  master
+  ========================================================
+
+# (8.1) git checkout -b <branchName>
+
+# ---> directly branch will changed and also new branch will be created
+
+eg:
+
+git checkout -b emergeny-fix
+Switched to a new branch 'emergeny-fix'
+======================================================
+
+# (9) git merge <branchName>
+
+---> to merge two branches
+
+====================================================
+eg:
+
+git merge emergeny-fix
+Updating 7f86a76..73fae70
+Fast-forward
+index.html | 2 +-
+1 file changed, 1 insertion(+), 1 deletion(-)
+====================================================
